@@ -8,12 +8,14 @@
     tools:context="com.example.student.kolokwium.MainActivity">
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimary"
         android:gravity="center_horizontal"
         android:paddingTop="8dp"
+        android:paddingBottom="10dp"
         android:text="Umow wizyte"
         android:textColor="@android:color/white"
         android:textSize="20dp" />
@@ -22,21 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wpisz pesel pacjenta dla którego chcesz umówić wizytę"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@android:color/holo_blue_light"
         android:paddingTop="10dp"
-        android:textSize="10dp"
+        android:textSize="12dp"
         android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"/>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Podaj numer pesel"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:id="@+id/edit_pesel"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"/>
 
@@ -45,19 +36,38 @@
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/ic_healing_black_24dp"
+        android:src="@drawable/ic_people_black_24dp"
 
 
         />
-    <Button
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:text="WYBIERZ LEKARZA"
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimaryDark"
-        android:layout_marginTop="50dp"
 
-        android:id="@+id/wybierz_lekarza"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_pesel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="Podaj numer pesel pacjenta"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="40dp" />
+
+        <Button
+            android:id="@+id/wybierz_lekarza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="WYBIERZ SPECJALISTĘ"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
 
 </LinearLayout>

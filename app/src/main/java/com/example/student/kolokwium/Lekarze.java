@@ -1,8 +1,5 @@
 package com.example.student.kolokwium;
 
-/**
- * Created by student on 2018-01-17.
- */
 
 public class Lekarze {
 
@@ -22,24 +19,24 @@ public class Lekarze {
         this.nazwisko = nazwisko;
     }
 
-    public String getSpecjalizacja() {
-        return specjalizacja;
+    public String getGprzyjec() {
+        return gprzyjec;
     }
 
-    public void setSpecjalizacja(String specjalizacja) {
-        this.specjalizacja = specjalizacja;
+    public void setGprzyjec(String gprzyjec) {
+        this.gprzyjec = gprzyjec;
     }
     private String imie;
     private String nazwisko;
-    private String specjalka;
-    private String specjalizacja;
-    Lekarze(String imie, String nazwisko, String specjalka)
+    private String przyjec;
+    private String gprzyjec;
+    Lekarze(String imie, String nazwisko, String gprzyjec)
     {
 
 
         this.imie = imie;
         this.nazwisko = nazwisko;
-        this.specjalka = specjalka;
+        this.gprzyjec = gprzyjec;
     }
 
 }

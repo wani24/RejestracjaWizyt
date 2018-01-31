@@ -1,8 +1,6 @@
 package com.example.student.kolokwium;
 
-/**
- * Created by student on 2018-01-17.
- */
+
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

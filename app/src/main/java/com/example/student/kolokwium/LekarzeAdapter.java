@@ -1,8 +1,6 @@
 package com.example.student.kolokwium;
 
-/**
- * Created by student on 2018-01-17.
- */
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +39,7 @@ public class LekarzeAdapter extends RecyclerView.Adapter<LekarzeAdapter.ViewHold
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.setImie(lekarze.get(position).getImie());
         holder.setNazwisko(lekarze.get(position).getNazwisko());
-        holder.setSpecjalizacja(lekarze.get(position).getSpecjalizacja());
+        holder.setGprzyjec(lekarze.get(position).getGprzyjec());
 
 
 
@@ -60,8 +58,8 @@ public class LekarzeAdapter extends RecyclerView.Adapter<LekarzeAdapter.ViewHold
         @BindView(R.id.nazwisko_l)
         TextView cost;
 
-        @BindView(R.id.spec_l)
-        TextView spec;
+        @BindView(R.id.przyj_l)
+        TextView przyj;
 
         private OnClickPlace listener;
 
@@ -78,7 +76,7 @@ public class LekarzeAdapter extends RecyclerView.Adapter<LekarzeAdapter.ViewHold
 
         private void setImie (String imie){name.setText(imie);}
         private void setNazwisko(String nazwisko) {cost.setText(nazwisko);}
-        private void setSpecjalizacja(String specjalizacja){spec.setText(specjalizacja);}
+        private void setGprzyjec(String gprzyjec){przyj.setText(gprzyjec);}
 
 
         public void OnClick(View view)

@@ -1,8 +1,6 @@
 package com.example.student.kolokwium;
 
-/**
- * Created by student on 2018-01-17.
- */
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,10 +33,10 @@ public class Main2Activity extends AppCompatActivity {
 
         final ArrayList<Lekarze> lekarze = new ArrayList<>();
 
-        lekarze.add(new Lekarze("Jan","Kowalski","dermatolog" ));
-        lekarze.add(new Lekarze("Andrzej","Nijaki","dermatolog" ));
-        lekarze.add(new Lekarze("Jozin","Zbazin","dermatolog" ));
-        lekarze.add(new Lekarze("Adolf","Stalin","dermatolog" ));
+        lekarze.add(new Lekarze("Jan","Kowalski","Pn-Pt 7.00-16.00" ));
+        lekarze.add(new Lekarze("Mahatma","Ghandi","Pn-So 8.00-18.00" ));
+        lekarze.add(new Lekarze("Wiesław","Wszywka","Wt 10.00-12.00" ));
+        lekarze.add(new Lekarze("Adam","Małysz","Pt-So 10.00-18.00" ));
 
 
 
